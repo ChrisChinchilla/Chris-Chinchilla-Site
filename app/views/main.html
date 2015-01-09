@@ -22,7 +22,7 @@
   <p>Spectacular Test Runner for JavaScript.</p>
   <ul class="articles">
     <li ng-repeat="article in articles | filter:query | orderBy:orderProp">
-      <span>{{article.node.title}}</span>
+      <a href="#/article/{{article.node.Nid}}">{{article.node.title}}</a>
     </li>
   </ul>
 </div>

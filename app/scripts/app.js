@@ -27,6 +27,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/article/:Nid', {
+        templateUrl: 'views/partials/article-detail.html',
+        controller: 'ArticleDetailCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
