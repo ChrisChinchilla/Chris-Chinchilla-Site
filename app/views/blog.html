@@ -1,0 +1,5 @@
+<ul class="articles">
+  <li ng-repeat="article in articles | filter:query | orderBy:orderProp">
+    <a href="#/article/{{article.node.Nid}}">{{article.node.title}}</a>
+  </li>
+</ul>
