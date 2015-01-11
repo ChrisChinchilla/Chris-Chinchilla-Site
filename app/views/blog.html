@@ -1,5 +1,8 @@
-<ul class="articles">
-  <li ng-repeat="article in articles | filter:query | orderBy:orderProp">
+<p>
+  As this site is quite new, this isn't <i>all</i> my Blog posts yet (these go back over 8 years). More coming very soon, plus the ability to filter and sort posts.
+</p>
+<ul class="articles" ng-repeat="article in articles">
+  <li>
     <h2><a href="#/article/{{article.node.Nid}}">{{article.node.title}}</a></h2>
   </li>
 </ul>
