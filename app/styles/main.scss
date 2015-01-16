@@ -3,6 +3,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+$fa-font-path: "../bower_components/font-awesome/fonts";
+@import "font-awesome/scss/font-awesome";
+
+@import "bootstrap-social/bootstrap-social";
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -53,6 +58,10 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 
+  .social_bar {
+
+  }
+
   .btn {
     font-size: 21px;
     padding: 14px 24px;
@@ -63,6 +72,7 @@ body {
   img {
     max-width:75%;
   }
+
 }
 
 /* Supporting marketing content */
