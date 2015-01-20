@@ -3,6 +3,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+.social_bar {
+  img {
+    display: inline;
+    width: 30px;
+    height: auto;
+  }
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -53,14 +61,6 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 
-  .social_bar {
-    img {
-      display: inline;
-      width: 30px;
-      height: auto;
-    }
-  }
-
   .btn {
     font-size: 21px;
     padding: 14px 24px;
@@ -85,9 +85,13 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+  .social_bar {
+    img {
+      width: 40px;
+    }
+    .container {
+      max-width: 730px;
+    }
 
   /* Remove the padding we set earlier */
   .header,
@@ -103,16 +107,19 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
-    .social_bar {
-    img {
-      width: 40px;
-    }
   }
-  }
+}
 }
 
 /* Responsive: Larger Screens and up */
 @media screen and (min-width: 1200px) {
+  .social_bar {
+    img {
+      display: inline;
+      width: 80px;
+      height: auto;
+    }
+  }
   .container {
     max-width: 1200px;
   }
@@ -131,12 +138,5 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
-    .social_bar {
-    img {
-      display: inline;
-      width: 80px;
-      height: auto;
-    }
-  }
   }
 }
