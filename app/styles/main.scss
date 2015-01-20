@@ -54,7 +54,11 @@ body {
   border-bottom: 1px solid #e5e5e5;
 
   .social_bar {
-
+    img {
+      display: inline;
+      width: 30px;
+      height: auto;
+    }
   }
 
   .btn {
@@ -99,6 +103,11 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+    .social_bar {
+    img {
+      width: 40px;
+    }
+  }
   }
 }
 
@@ -122,5 +131,12 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+    .social_bar {
+    img {
+      display: inline;
+      width: 80px;
+      height: auto;
+    }
+  }
   }
 }
